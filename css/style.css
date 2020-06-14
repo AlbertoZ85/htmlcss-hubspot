@@ -16,6 +16,11 @@ body {
     clear: both;
 }
 
+p {
+    font-size: 0.85em;
+    line-height: 1.75;
+}
+
 ul {
     list-style: none;
 }
@@ -52,7 +57,7 @@ a {
 .bg-light.central {
     background-color: #f5f8fa;
     /* DA CANCELLARE */
-    height: 400px;
+    height: 1000px;
 }
 
 .bg-gradient {
@@ -193,20 +198,69 @@ header {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 700;
     margin-top: 50px;
 }
 
 .banner p {
     margin: 30px 0;
-    line-height: 2;
-}
-
-.banner p:first-of-type {
-    font-size: 0.85em;
 }
 
 .banner p:last-of-type {
-    font-size: 0.75em;
+    font-size: 0.7em;
+}
+/* --- */
+/* BG-LIGHT CENTRAL */
+/* TOP */
+.top {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.top img {
+    height: 150px;
+}
+
+.top h2 {
+    margin-bottom: 25px;
+    font-size: 1.75em;
+}
+
+.top p {
+    padding: 0 18em;
+}
+/* --- */
+/* MIDDLE */
+.middle {
+    background-color: white;
+    margin: 40px 0;
+    /* DA CANCELLARE */
+    height: 500px;
+}
+
+.middle .left {
+    width: 30%;
+    float: left;
+    text-align: center;
+    /* DA CANCELLARE */
+    height: 100%;
+    border: 1px solid black;
+}
+
+.middle .left img {
+    height: 80px;
+}
+
+.middle .left button {
+    display: block;
+    margin: 0 auto;
+}
+
+.middle .right {
+    width: 70%;
+    float: left;
+    /* DA CANCELLARE */
+    height: 100%;
+    border: 1px solid black;
 }
