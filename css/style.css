@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: #33475b;
 }
@@ -14,6 +14,14 @@ body {
     content: '';
     display: table;
     clear: both;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* CONTAINER */
@@ -64,19 +72,18 @@ body {
 
 .nav-fixed ul, .nav-fixed li {
     float: left;
-    list-style: none;
 }
 
-.nav-fixed .left span {
+.nav-fixed span {
     border-right: 2px solid #cbd6e2;
     padding-right: 15px;
 }
 
-.nav-fixed .left li:last-child {
+.nav-fixed li:last-child {
     margin: 0 15px;
 }
 
-.nav-fixed .left a {
+.nav-fixed ul a {
     color: #33475b;
     text-decoration: none;
 }
@@ -99,7 +106,6 @@ button {
 }
 
 button a {
-    text-decoration: none;
     color: white;
     /* font-weight: 500; */ NON FUNZIONA...
 }
@@ -128,4 +134,36 @@ button a {
 
 .corallo:hover {
     background-color: #ffbcac;
+}
+/* --- */
+/* HEADER */
+/* HEADER-TOP */
+.header-top {
+    height: 70px;
+    line-height: 65px;
+}
+
+#logo, .header-top li {
+    float: left;
+}
+
+#logo img {
+    height: 30px;
+    margin-top: 17.5px;
+}
+
+.header-top nav {
+    float: right;
+}
+
+.header-top a {
+    color: #33475b;
+}
+
+.header-top li {
+    margin: 0 10px;
+}
+
+.header-top i {
+    margin-left: 10px;
 }
