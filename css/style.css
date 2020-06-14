@@ -40,10 +40,13 @@ a {
     height: 70px;
 }
 
-.bg-white {
+.bg-jumbo {
+    height: 700px;
     background-color: white;
-    /* DA CANCELLARE */
-    height: 400px;
+    background-image: url('../img/jumbotron.png');
+    background-size: auto 630px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
 }
 
 .bg-light.central {
@@ -58,6 +61,12 @@ a {
     height: 400px;
 }
 
+.bg-companies {
+    background-color: white;
+    /* DA CANCELLARE */
+    height: 400px;
+}
+
 .bg-charcoal {
     background-color: #33475b;
     /* DA CANCELLARE */
@@ -65,6 +74,12 @@ a {
 }
 /* --- */
 /* NAV BAR FIXED */
+.bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 .nav-fixed {
     font-size: 0.95em;
     line-height: 65px;
@@ -129,7 +144,7 @@ button a {
 }
 
 .btn-big {
-
+    padding: 15px 30px;
 }
 
 .corallo:hover {
@@ -137,6 +152,9 @@ button a {
 }
 /* --- */
 /* HEADER */
+header {
+    margin-top: 70px;
+}
 /* HEADER-TOP */
 .header-top {
     height: 70px;
@@ -166,4 +184,29 @@ button a {
 
 .header-top i {
     margin-left: 10px;
+}
+/* --- */
+/* BANNER */
+.banner {
+    width: 40%;
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.banner p {
+    margin: 30px 0;
+    line-height: 2;
+}
+
+.banner p:first-of-type {
+    font-size: 0.85em;
+}
+
+.banner p:last-of-type {
+    font-size: 0.75em;
 }
