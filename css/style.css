@@ -7,10 +7,125 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    color: #33475b;
 }
 
 .clearfix::after {
     content: '';
     display: table;
     clear: both;
+}
+
+/* CONTAINER */
+.container, .nav-fixed {
+    width: 70%;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* DA CANCELLARE */
+    height: 100%;
+    border: 1px solid black;
+}
+
+.bg-light.bar {
+    background-color: #f5f8fa;
+    /* DA CANCELLARE */
+    height: 70px;
+}
+
+.bg-white {
+    background-color: white;
+    /* DA CANCELLARE */
+    height: 400px;
+}
+
+.bg-light.central {
+    background-color: #f5f8fa;
+    /* DA CANCELLARE */
+    height: 400px;
+}
+
+.bg-gradient {
+    background-color: #00b0b2;
+    /* DA CANCELLARE */
+    height: 400px;
+}
+
+.bg-charcoal {
+    background-color: #33475b;
+    /* DA CANCELLARE */
+    height: 400px;
+}
+/* --- */
+/* NAV BAR FIXED */
+.nav-fixed {
+    font-size: 0.95em;
+    line-height: 65px;
+}
+
+.nav-fixed ul, .nav-fixed li {
+    float: left;
+    list-style: none;
+}
+
+.nav-fixed .left span {
+    border-right: 2px solid #cbd6e2;
+    padding-right: 15px;
+}
+
+.nav-fixed .left li:last-child {
+    margin: 0 15px;
+}
+
+.nav-fixed .left a {
+    color: #33475b;
+    text-decoration: none;
+}
+/* --- */
+/* CALL TO ACTION */
+.cta {
+    float: right;
+}
+
+.cta i {
+    color: #00a4bd;
+}
+/* --- */
+/* BUTTON */
+button {
+    color: white;
+    background-color: #ff7a59;
+    border: none;
+    border-radius: 5px;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+    /* font-weight: 500; */ NON FUNZIONA...
+}
+
+.login {
+    background-color: transparent;
+    border: 1px solid #ff7a59;
+    margin: 0 20px;
+}
+
+.login a {
+    color: #ff7a59;
+}
+
+.login:hover {
+    background-color: #fff1ee;
+}
+
+.btn-small {
+    padding: 7.5px 10px;
+}
+
+.btn-big {
+
+}
+
+.corallo:hover {
+    background-color: #ffbcac;
 }
