@@ -17,7 +17,7 @@ body {
 }
 
 p {
-    font-size: 0.85em;
+    font-size: 0.9em;
     line-height: 1.75;
 }
 
@@ -127,7 +127,8 @@ button {
 
 button a {
     color: white;
-    /* font-weight: 500; */ NON FUNZIONA...
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
 }
 
 .login {
@@ -215,11 +216,11 @@ h1 {
 /* TOP */
 .top {
     text-align: center;
-    margin: 40px 0;
 }
 
 .top img {
     height: 150px;
+    margin-top: 40px;
 }
 
 .top h2 {
@@ -228,7 +229,7 @@ h1 {
 }
 
 .top p {
-    padding: 0 18em;
+    padding: 0 16em;
 }
 /* --- */
 /* MIDDLE */
@@ -241,26 +242,67 @@ h1 {
 
 .middle .left {
     width: 30%;
+    height: 100%;
+    padding: 50px 0;
+    padding-left: 90px;
     float: left;
     text-align: center;
     /* DA CANCELLARE */
-    height: 100%;
     border: 1px solid black;
 }
 
 .middle .left img {
-    height: 80px;
+    height: 100px;
 }
 
 .middle .left button {
     display: block;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 .middle .right {
     width: 70%;
+    padding: 50px 60px;
     float: left;
     /* DA CANCELLARE */
     height: 100%;
     border: 1px solid black;
+}
+
+h4 {
+    font-size: 23px;
+}
+
+.middle .right p:first-of-type {
+    padding-right: 10em;
+    margin: 20px 0;
+}
+
+.middle .right p:last-of-type {
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    position: relative;
+}
+/* GIOCO UN PO' CON SELETTORI AVANZATI E PSEUDOELEMENTI, BASTAVA DARE UNA CLASSE AL p. INOLTRE, POTEVO USARE hr inline-block */
+.middle .right p:last-of-type::after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    width: 60%;
+    height: 5px;
+    margin-left: 3em;
+    border-top: 2px solid darkgray;
+
+}
+
+.middle .right li {
+    float: left;
+    padding-right: 20px;
+}
+
+.middle .right i {
+    color: #ff7a59;
+    margin-right: 10px;
 }
