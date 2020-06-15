@@ -16,6 +16,10 @@ body {
     clear: both;
 }
 
+h4 {
+    font-size: 23px;
+}
+
 p {
     font-size: 0.9em;
     line-height: 1.75;
@@ -23,10 +27,16 @@ p {
 
 ul {
     list-style: none;
+    font-size: 0.95em;
 }
 
 a {
     text-decoration: none;
+}
+
+i.circle{
+    color: #ff7a59;
+    margin-right: 10px;
 }
 
 /* CONTAINER */
@@ -40,9 +50,13 @@ a {
 }
 
 .bg-light.bar {
-    background-color: #f5f8fa;
-    /* DA CANCELLARE */
     height: 70px;
+    background-color: #f5f8fa;
+    border-bottom: 1px solid #cbd6e2;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
 }
 
 .bg-jumbo {
@@ -56,8 +70,7 @@ a {
 
 .bg-light.central {
     background-color: #f5f8fa;
-    /* DA CANCELLARE */
-    height: 1000px;
+    padding: 40px 0;
 }
 
 .bg-gradient {
@@ -79,12 +92,6 @@ a {
 }
 /* --- */
 /* NAV BAR FIXED */
-.bar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
 .nav-fixed {
     font-size: 0.95em;
     line-height: 65px;
@@ -106,6 +113,7 @@ a {
 .nav-fixed ul a {
     color: #33475b;
     text-decoration: none;
+    margin: 0 2px;
 }
 /* --- */
 /* CALL TO ACTION */
@@ -123,6 +131,7 @@ button {
     background-color: #ff7a59;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 button a {
@@ -146,7 +155,7 @@ button a {
 }
 
 .btn-small {
-    padding: 7.5px 10px;
+    padding: 7.5px 15px;
 }
 
 .btn-big {
@@ -220,7 +229,6 @@ h1 {
 
 .top img {
     height: 150px;
-    margin-top: 40px;
 }
 
 .top h2 {
@@ -236,8 +244,9 @@ h1 {
 .middle {
     background-color: white;
     margin: 40px 0;
+    border-radius: 0.2em;
     /* DA CANCELLARE */
-    height: 500px;
+    /* height: 500px; */
 }
 
 .middle .left {
@@ -247,8 +256,6 @@ h1 {
     padding-left: 90px;
     float: left;
     text-align: center;
-    /* DA CANCELLARE */
-    border: 1px solid black;
 }
 
 .middle .left img {
@@ -264,13 +271,6 @@ h1 {
     width: 70%;
     padding: 50px 60px;
     float: left;
-    /* DA CANCELLARE */
-    height: 100%;
-    border: 1px solid black;
-}
-
-h4 {
-    font-size: 23px;
 }
 
 .middle .right p:first-of-type {
@@ -294,15 +294,71 @@ h4 {
     height: 5px;
     margin-left: 3em;
     border-top: 2px solid darkgray;
-
 }
 
 .middle .right li {
     float: left;
     padding-right: 20px;
 }
+/* --- */
+/* BOTTOM */
+.bottom {
+    /* DA CANCELLARE */
+    height: 600px;
+}
+/* CARDS */
+.cards {
+    float: left;
+    width: calc(100% / 3);
+    /* DA CANCELLARE */
+    height: 100%;
+}
 
-.middle .right i {
-    color: #ff7a59;
-    margin-right: 10px;
+.cards.first {
+    padding-right: 40px;
+}
+
+.cards.second {
+    padding: 0 20px;
+}
+
+.cards.third {
+    padding-left: 40px;
+}
+
+.cards-box {
+    background-color: white;
+    text-align: center;
+    padding: 20px 45px;
+    border-radius: 0.2em;
+    height: 100%;
+}
+
+.cards img {
+    height: 100px;
+}
+
+.cards h4 {
+    margin: 25px 0;
+}
+
+hr {
+    margin-top: 45px;
+    margin-bottom: 25px;
+    border: 1px solid darkgray;
+}
+
+.cards p:last-of-type {
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.cards li {
+    text-align: left;
+}
+
+.cards button {
+    margin-top: 50px;
 }
