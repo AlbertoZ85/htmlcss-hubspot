@@ -97,8 +97,9 @@ i.circle{
 
 .bg-companies {
     background-color: white;
+    padding: 40px 0;
     /* DA CANCELLARE */
-    height: 400px;
+    height: 650px;
 }
 
 .bg-charcoal {
@@ -437,4 +438,79 @@ hr {
 
 .table-box p {
     font-size: 0.75em;
+}
+
+/* BG-COMPANIES */
+/* CUSTOMERS TOP */
+.customers-top {
+    height: 200px;
+}
+
+.customers-top-text {
+    width: 30%;
+    float: left;
+    padding: 10px 90px;
+    height: 100%;
+}
+
+.customers-top-text h2 {
+    font-size: 40px;
+}
+
+/* lOGOS */
+.customers-logos {
+    width: 70%;
+    height: 80%;
+    float: right;
+    padding: 0 5em;
+}
+
+.customers-logos .logo {
+    float: left;
+    width: calc(100% / 4);
+    height: 50%;
+    position: relative;
+}
+
+.logo img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    padding: 20px;
+}
+
+/* CUSTOMERS BOTTOM */
+.customers-bottom {
+    padding-top: 50px;
+    /* height: 450px; */
+}
+
+.customers-bottom-text {
+    width: 50%;
+    float: left;
+    padding-right: 7em;
+    height: 100%;
+}
+
+.customers-bottom-image {
+    width: 50%;
+    height: 100%;
+    float: left;
+    text-align: right;
+}
+
+.customers-bottom img {
+    height: 350px;
+    position: relative;
+    top: -40px;
+}
+
+.customers-bottom button {
+    margin: 40px 0;
+}
+
+.customers-bottom p:last-of-type {
+    font-size: 0.7em;
 }
